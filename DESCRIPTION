@@ -22,5 +22,7 @@ Imports:
     devtools,
     dplyr,
     ggplot2,
-    janitor
+    janitor,
+    stringr,
+    tidyr
 RoxygenNote: 7.3.3
