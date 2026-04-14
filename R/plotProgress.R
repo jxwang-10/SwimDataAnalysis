@@ -1,17 +1,18 @@
 #' Plotting Progress
 #'
 #' @description function to plot the progress in one event over the years
-#' @details
+#' @details cleans the data and plots the race tiems over the years
 #' @param x data frame of at least times and date
 #' @return none.
 #' @export
-#' @import ggplot2
 #' @examples
-#'
+#' plotProgress(iris)
 #'
 plotProgress <- function(x){
   # clean function here
-  ggplot2::ggplot(data = x, ggplot2::aes(x = date, y = time)) + ggplot2::geom_line() + ggplot2::scale_x_date(date_labels = "%m-%d-%Y")
+  x_new <- cleanData(x)
+  plot(x_new$date, x_new$time, xlab = "Date", ylab="Seconds")
+
   }
 
 

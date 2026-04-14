@@ -23,6 +23,8 @@ Imports:
     dplyr,
     ggplot2,
     janitor,
+    lubridate,
+    purrr,
     stringr,
     tidyr
 RoxygenNote: 7.3.3
