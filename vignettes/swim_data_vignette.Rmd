@@ -18,4 +18,36 @@ knitr::opts_chunk$set(
 library(SwimDataAnalysis)
 ```
 
-This pack
+This package is to analyze a swimmer's data from [swimcloud.com](swimcloud.com). The functions are tested on data that has been copy-pasted from the Times page of a swimmer's swimcloud page for a single event.
+
+# Examples:
+
+## cleanData
+used to make a column with time series and coerce the date into a date type
+```{r}
+#| eval: false
+cleanData(twohundred_fly)
+
+```
+
+## filter_year
+used to filter for all the swims in one year (not season)
+```{r}
+#| eval: false
+filter_year(twohundred_fly, 2025)
+```
+
+## find_meet
+used to find the times from a meet, regardless of year
+```{r}
+#| eval: false
+find_meet("Speedo Sectionals - Providence")
+```
+
+##plotProgress
+used to plot the progression across the years
+```{r}
+#| eval: false
+plotProgress(iris)
+```
+
