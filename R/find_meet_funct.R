@@ -1,4 +1,4 @@
-#' Filter Meet Function
+#' Find Meet Function
 #'
 #' @description Function that can be used to filter to a specified meet
 #' @details

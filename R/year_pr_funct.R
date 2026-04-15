@@ -13,6 +13,9 @@
 
 yearly_pr <- function(x, year){
   x_clean <- cleanData(x)
+  if(!(year %in% lubridate::year(x_clean$date))){
+    stop("The year ", year," is not included in your data.")
+  }
   pr_data <- x_clean |>
     filter(year(date) == year) |>
     mutate(minutes = as.numeric(sub(":.*", "", time_og)),
@@ -20,6 +23,7 @@ yearly_pr <- function(x, year){
       time_sec = minutes * 60 + seconds) |>
     slice_min(time_sec, n = 1) |>
     select(time_og)
+  pr_data <- pr_data[1,1]
   message("Printing your PR from ", year,":")
   return(pr_data)
 }

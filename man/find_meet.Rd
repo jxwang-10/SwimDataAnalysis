@@ -2,7 +2,7 @@
 % Please edit documentation in R/find_meet_funct.R
 \name{find_meet}
 \alias{find_meet}
-\title{Filter Meet Function}
+\title{Find Meet Function}
 \usage{
 find_meet(x, meet)
 }
