@@ -8,7 +8,7 @@
 #' @import janitor
 #' @import stringr
 #' @import tidyr
-#' @import dyplr
+#' @import dplyr
 #' @examples
 #' cleanData(iris)
 #'

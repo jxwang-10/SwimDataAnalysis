@@ -5,8 +5,8 @@
 #' @param x data frame of times, date, and meet
 #' @param meet the meet that the user specifies
 #' @return data frame with only the rows containing the selected meet
-#' @export none
-#' @import
+#' @export
+#' @import dplyr
 #' @examples
 #' find_meet(twohundred_fly, "Smith vs Simmons")
 
