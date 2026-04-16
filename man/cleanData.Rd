@@ -16,9 +16,13 @@ none.
 cleaning data
 }
 \details{
+<<<<<<< HEAD
 coerces time and date data into proper form
 }
 \examples{
 cleanData(twohundred_fly)
 
+=======
+Test.
+>>>>>>> 45a48a0 (feedback + proposed changes from cp #1)
 }

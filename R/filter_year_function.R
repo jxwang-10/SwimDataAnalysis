@@ -1,7 +1,11 @@
 #' Filter Year Function
 #'
 #' @description Function that can be used to filter to a specified year
+<<<<<<< HEAD
 #' @details input a year and filter out the times from one particular year
+=======
+#' @details Test.
+>>>>>>> 45a48a0 (feedback + proposed changes from cp #1)
 #' @param x data frame of times, date, and meet
 #' @param year the year that the user specifies
 #' @return data frame with only rows of the specified year

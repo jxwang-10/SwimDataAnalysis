@@ -1,7 +1,11 @@
 #' Year PR Function
 #'
 #' @description Function that can be used to filter to a specified year and output your PR from that year
+<<<<<<< HEAD
 #' @details finds the PR of a given year
+=======
+#' @details Test.
+>>>>>>> 45a48a0 (feedback + proposed changes from cp #1)
 #' @param x data frame of times, date, and meet
 #' @param year the year that the user specifies
 #' @return one value which is your PR for the specified year

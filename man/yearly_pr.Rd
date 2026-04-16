@@ -18,7 +18,11 @@ one value which is your PR for the specified year
 Function that can be used to filter to a specified year and output your PR from that year
 }
 \details{
+<<<<<<< HEAD
 finds the PR of a given year
+=======
+Test.
+>>>>>>> 45a48a0 (feedback + proposed changes from cp #1)
 }
 \examples{
 yearly_pr(twohundred_fly, 2026)

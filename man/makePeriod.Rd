@@ -18,9 +18,12 @@ p time in period type
 function to make a period with the name of a time unit pluralized
 }
 \details{
+<<<<<<< HEAD
 return time of period type
+=======
+Test.
+>>>>>>> 45a48a0 (feedback + proposed changes from cp #1)
 }
 \examples{
 makePeriod(2, 46.70)
-> "2M 46.7S"
 }
