@@ -17,6 +17,9 @@ one value which is your PR for the specified year
 \description{
 Function that can be used to filter to a specified year and output your PR from that year
 }
+\details{
+Test.
+}
 \examples{
 yearly_pr(twohundred_fly, 2026)
 

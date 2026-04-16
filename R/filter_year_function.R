@@ -1,11 +1,11 @@
 #' Filter Year Function
 #'
 #' @description Function that can be used to filter to a specified year
-#' @details
+#' @details Test.
 #' @param x data frame of times, date, and meet
 #' @param year the year that the user specifies
 #' @return data frame with only rows of the specified year
-#' @export none
+#' @export
 #' @import dplyr
 #' @import lubridate
 #' @examples

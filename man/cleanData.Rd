@@ -15,7 +15,6 @@ none.
 \description{
 cleaning data
 }
-\examples{
-cleanData(iris)
-
+\details{
+Test.
 }

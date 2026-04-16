@@ -1,0 +1,8 @@
+Hi Amelia and Jessie,
+
+Good job on the package! So far, you have decent progress on all parts. Make sure to remedy the notes below and continue developing code to build out the rest of the functionality of your code:
+
+- Double check to see that you have the usethis, testthat, devtools, and roxygen2 packages installed on your end. I had to install them on my end for your package.
+- I removed "none" from all of your @export tags. This should just be left as is.
+- For the @details tags, I added some brief text to bypass errors in your R CMD check.
+- There's an error that pops up with the cleanData.R when using iris as an example. I removed this, but just update this example with a data frame that can run successfully with your function. Same goes with your other functions.
