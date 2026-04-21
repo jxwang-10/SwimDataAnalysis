@@ -15,7 +15,10 @@ none.
 \description{
 cleaning data
 }
+\details{
+coerces time and date data into proper form
+}
 \examples{
-cleanData(iris)
+cleanData(twohundred_fly)
 
 }

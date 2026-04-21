@@ -1,7 +1,7 @@
 #' Cleaning Data
 #'
 #' @description cleaning data
-#' @details
+#' @details coerces time and date data into proper form
 #' @param x data frame of at least times and date
 #' @return none.
 #' @export
@@ -10,7 +10,7 @@
 #' @import tidyr
 #' @import dplyr
 #' @examples
-#' cleanData(iris)
+#' cleanData(twohundred_fly)
 #'
 cleanData <- function(x) {
   x <- janitor::clean_names(x)

@@ -12,10 +12,14 @@ makePeriod(min, sec)
 \item{sec}{seconds}
 }
 \value{
-none.
+p time in period type
+#' @import lubridate
 }
 \description{
 function to make a period with the name of a time unit pluralized
+}
+\details{
+return time of period type
 }
 \examples{
 makePeriod(2, 46.70)

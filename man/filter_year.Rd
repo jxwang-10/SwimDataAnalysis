@@ -17,6 +17,9 @@ data frame with only rows of the specified year
 \description{
 Function that can be used to filter to a specified year
 }
+\details{
+input a year and filter out the times from one particular year
+}
 \examples{
 filter_year(twohundred_fly, 2025)
 }

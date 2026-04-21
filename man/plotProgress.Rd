@@ -19,6 +19,6 @@ function to plot the progress in one event over the years
 cleans the data and plots the race tiems over the years
 }
 \examples{
-plotProgress(iris)
+plotProgress(twohundred_fly)
 
 }

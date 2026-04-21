@@ -6,7 +6,7 @@
 #' @return none.
 #' @export
 #' @examples
-#' plotProgress(iris)
+#' plotProgress(twohundred_fly)
 #'
 plotProgress <- function(x){
   # clean function here

@@ -17,6 +17,9 @@ data frame with only the rows containing the selected meet
 \description{
 Function that can be used to filter to a specified meet
 }
+\details{
+finds all the times from the same meet, regardless of year
+}
 \examples{
 find_meet(twohundred_fly, "Smith vs Simmons")
 }
