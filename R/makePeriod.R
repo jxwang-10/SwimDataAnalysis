@@ -5,7 +5,8 @@
 #' @param min minutes
 #' @param sec seconds
 #' @return p time in period type
-#' #' @import lubridate
+#' @export
+#' @import lubridate
 #' @examples
 #' makePeriod(2, 46.70)
 #' > "2M 46.7S"

@@ -5,7 +5,7 @@
 #' @param x data frame of times, date, and meet
 #' @param year the year that the user specifies
 #' @return one value which is your PR for the specified year
-#' @export none
+#' @export
 #' @import lubridate
 #' @examples
 #' yearly_pr(twohundred_fly, 2026)

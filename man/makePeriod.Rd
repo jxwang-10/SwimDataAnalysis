@@ -13,7 +13,6 @@ makePeriod(min, sec)
 }
 \value{
 p time in period type
-#' @import lubridate
 }
 \description{
 function to make a period with the name of a time unit pluralized
