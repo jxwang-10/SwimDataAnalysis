@@ -12,7 +12,7 @@
 
 find_meet <- function(x, meet){
   filteredx <- x |>
-    filter(x$Meet == meet)
+    dplyr::filter(x$Meet == meet)
   message("Here is your data from the ", meet," meet:")
   return(filteredx)
 }
