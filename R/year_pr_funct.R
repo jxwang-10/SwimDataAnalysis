@@ -7,9 +7,10 @@
 #' @return one value which is your PR for the specified year
 #' @export
 #' @import lubridate
+#' @import dplyr
 #' @examples
 #' yearly_pr(twohundred_fly, 2026)
-#'
+
 
 yearly_pr <- function(x, year){
   x_clean <- cleanData(x)
@@ -17,12 +18,12 @@ yearly_pr <- function(x, year){
     stop("The year ", year," is not included in your data.")
   }
   pr_data <- x_clean |>
-    filter(year(date) == year) |>
-    mutate(minutes = as.numeric(sub(":.*", "", time_og)),
+    dplyr::filter(lubridate::year(date) == year) |>
+    dplyr::mutate(minutes = as.numeric(sub(":.*", "", time_og)),
       seconds = as.numeric(sub(".*:", "", time_og)),
       time_sec = minutes * 60 + seconds) |>
-    slice_min(time_sec, n = 1) |>
-    select(time_og)
+    dplyr::slice_min(time_sec, n = 1) |>
+    dplyr::select(time_og)
   pr_data <- pr_data[1,1]
   message("Printing your PR from ", year,":")
   return(pr_data)

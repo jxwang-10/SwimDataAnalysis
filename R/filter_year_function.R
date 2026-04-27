@@ -15,7 +15,7 @@ filter_year <- function(x, year){
   # Filter the Year column to only the years specified at function call
   x_clean <- cleanData(x)
   year_data <- x_clean |>
-    filter(year(date) == year)
+    dplyr::filter(lubridate::year(date) == year)
   message("Here is all of your data from ", year,":")
   return(year_data)
 }
