@@ -9,9 +9,9 @@
 #' @import dplyr
 #' @import ggplot2
 #' @examples
-#' monthly_prs_plot(twohundred_fly)
+#' plot_progress(twohundred_fly)
 
-monthly_prs_plot <- function(x){
+plot_progress <- function(x){
   # clean function here
   x_new <- cleanData(x)
 

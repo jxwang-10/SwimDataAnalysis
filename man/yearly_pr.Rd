@@ -22,5 +22,4 @@ finds the PR of a given year
 }
 \examples{
 yearly_pr(twohundred_fly, 2026)
-
 }
