@@ -44,10 +44,23 @@ used to find the times from a meet, regardless of year
 find_meet("Speedo Sectionals - Providence")
 ```
 
-##plotProgress
+## plot_progress
 used to plot the progression across the years
 ```{r}
 #| eval: false
-plotProgress(iris)
+plot_progress(twohundred_fly)
+```
+
+
+## find_event
+used to filter out an event when the dataset includes more than one
+```{r}
+find_event(top_three, "200 Back")
+```
+
+## yearly_pr
+used to find the pr in a certain year
+```{r}
+yearly_pr(twohundred_fly, 2026)
 ```
 
