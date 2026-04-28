@@ -1,0 +1,7 @@
+-	Small thing with README: move the bullet-points to the next line so they are bulleted in the README printout.
+-	DESCRIPTION file missing your names and some form of a brief description. (-1)
+-	For examples in R files that do not work currently: you can use the \dontrun{} command inside the Roxygen2 comment to bypass a potential error with the example not working.
+-	For the test files (at least one of them): more cases should be tested out to see if your function works on a variety of inputs. (-1.5)
+-	For the vignette: the layout is good. You all will need to add in background to each of those functions to connect the code to its practical usage (and interpretation).
+-	In this branch, I’ve added a globals.R file that will allow you to capture any variables that are flagged as having “no visible binding.” For any variables with that flag, you will add them to the vector inside the globals.R file.
+-	Suggestion: for the findMeet output, adding in errors/warnings regarding problematic output would help communicate problematic/missing inputs.
