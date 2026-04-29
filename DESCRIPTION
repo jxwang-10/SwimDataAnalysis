@@ -4,13 +4,18 @@ Title: What the Package Does (Title Case)
 Version: 0.1.0
 Authors@R: c(
     person(
-      "Jane", "Doe",
-      email = "jane@example.com",
+      "Jessie", "Wang",
+      email = "jessiexwang10@gmail.com",
       role = c("aut", "cre")
+    ),
+    person(
+      "Amelia", "Dion",
+      email = "adion@smith.edu",
+      role = c("aut")
     )
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
+Description: Package to analyze a swimmer's data from swimcloud. 
+    Includes sample data from Jessie Wang's swimcloud page as of April 2026 and functions to clean and analyze it.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
