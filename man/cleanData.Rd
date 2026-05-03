@@ -7,18 +7,17 @@
 cleanData(x)
 }
 \arguments{
-\item{x}{data frame of at least times and date}
+\item{x}{data frame with at least time and date variables}
 }
 \value{
 none.
 }
 \description{
-cleaning data
+cleans data by modifying variables for usability
 }
 \details{
-coerces time and date data into proper form
+coerces time and date data into proper format
 }
 \examples{
 cleanData(twohundred_fly)
-
 }

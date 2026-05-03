@@ -20,4 +20,5 @@ cleans the data, converts time to seconds, then plots the times
 }
 \examples{
 plot_progress(twohundred_fly)
+plot_progress(twohundred_back)
 }

@@ -13,18 +13,28 @@
 
 
 yearly_pr <- function(x, year){
+
+  # Get cleaned dataset
   x_clean <- cleanData(x)
+
+  # Error if year given is not included in the dataset
   if(!(year %in% lubridate::year(x_clean$date))){
     stop("The year ", year," is not included in your data.")
   }
+
+  # Filter dataset to the year specified, use make_time_sec() function
   pr_data <- x_clean |>
     dplyr::filter(lubridate::year(date) == year) |>
-    dplyr::mutate(minutes = as.numeric(sub(":.*", "", time_og)),
-      seconds = as.numeric(sub(".*:", "", time_og)),
-      time_sec = minutes * 60 + seconds) |>
+    make_time_sec() |>
     dplyr::slice_min(time_sec, n = 1) |>
     dplyr::select(time_og)
+
+  # Output only the fastest time
   pr_data <- pr_data[1,1]
+
+  # Print message
   message("Printing your PR from ", year,":")
+
+  # Return single value
   return(pr_data)
 }

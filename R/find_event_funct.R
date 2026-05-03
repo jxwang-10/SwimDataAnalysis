@@ -11,11 +11,27 @@
 #' find_event(top_three, "200 Back")
 
 find_event <- function(x, event){
+
+  # Error if event given is not included in the dataset
+  if(!(event %in% x_clean$Event)){
+    stop("This event, ", event,", is not included in your data.")}
+
+  # Error if event given is not included in the dataset
+  if(is.character(event) != TRUE){
+    stop("Input value for event, ", event,", is not of the character type.")}
+
+  # Filter to the event given
   filteredx <- x |>
     dplyr::filter(Event == event)
+
+  # Arrange rows by time
   filteredx <- filteredx |>
     dplyr::arrange(Time)
+
+  # Output message
   message("Here is your data from the ", event,":")
+
+  # Return filtered + arranged data
   return(filteredx)
 }
 

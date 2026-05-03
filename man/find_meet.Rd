@@ -22,4 +22,5 @@ finds all the times from the same meet, regardless of year
 }
 \examples{
 find_meet(twohundred_fly, "Smith vs Simmons")
+find_meet(twohundred_fly, "Speedo Sectionals - Providence")
 }

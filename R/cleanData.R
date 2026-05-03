@@ -1,8 +1,8 @@
 #' Cleaning Data
 #'
-#' @description cleaning data
-#' @details coerces time and date data into proper form
-#' @param x data frame of at least times and date
+#' @description cleans data by modifying variables for usability
+#' @details coerces time and date data into proper format
+#' @param x data frame with at least time and date variables
 #' @return none.
 #' @export
 #' @import janitor
@@ -11,16 +11,21 @@
 #' @import dplyr
 #' @examples
 #' cleanData(twohundred_fly)
-#'
+
 cleanData <- function(x) {
   x <- janitor::clean_names(x)
+
+  # error if there is no date variable included in data
   if ("date" %in% colnames(x) == FALSE){
     stop("No column named Date found")
   }
+
+  # error if there is no time variable included in data
   if ("time" %in% colnames(x) == FALSE){
     stop("No column named Time found")
   }
 
+  # Transform the date column
   names <- c("Month", "Day", "Year")
   x <- x |>
     tidyr::separate(date, names, " ", remove = FALSE)
@@ -55,31 +60,18 @@ cleanData <- function(x) {
                                 "October" ~ 10,
                                 "November" ~ 11,
                                 "December" ~ 12
-      )
-    )
+))
 
   x <- x|>
     tidyr::unite(col = date, names, sep = "-")
 
-
+  # assign month day and year back to the same variable called date (replace)
   x$date <- as.Date(x$date, "%m-%d-%Y")
 
+  # keep old time variable and create new variable with modified format
   x$time_og <- x$time
-###----------------------
-  # names <- c("Minutes", "Seconds")
-  # x <- x |>
-  #   tidyr::separate(time_og, names2, ":", remove = FALSE)
-  #
-  # x$Minutes <- as.double(x$Minutes)
-  # x$Seconds <- as.double(x$Seconds)
-  #
-  # print(x$Minutes)
-  # print(x$Seconds)
-  #
-  # x$time <- unlist(purrr::map2(x$Minutes, x$Seconds, makePeriod))
-  #
 
-### ----------------------
+  # turn old time column into ms format
   x$time <- lubridate::ms(x$time)
   return(x)
 }
