@@ -9,8 +9,11 @@
 ## About
 
 SwimDataAnalysis is a package to analyze a swimmer’s data (i.e., times)
-from [SwimCloud](swimcloud.com). You can analyze: - PRs - Overall
-Progress - Filtered data based on criteria
+from [SwimCloud](swimcloud.com). You can analyze:
+
+- PRs
+- Overall Progress
+- Filtered data based on criteria
 
 There are data sets included to use for examples from [Jessie Wang’s
 swimcloud page](https://www.swimcloud.com/swimmer/1908125/):
