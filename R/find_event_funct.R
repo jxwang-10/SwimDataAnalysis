@@ -13,7 +13,7 @@
 find_event <- function(x, event){
 
   # Error if event given is not included in the dataset
-  if(!(event %in% x_clean$Event)){
+  if(!(event %in% x$Event)){
     stop("This event, ", event,", is not included in your data.")}
 
   # Error if event given is not included in the dataset

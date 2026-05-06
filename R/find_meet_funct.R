@@ -12,6 +12,10 @@
 #' find_meet(twohundred_fly, "Speedo Sectionals - Providence")
 
 find_meet <- function(x, meet){
+  # error if there is no meet variable included in data
+  if ("Meet" %in% colnames(x) == FALSE){
+    stop("No column named Meet found")
+  }
 
   # Error if event given is not included in the dataset
   if(!(meet %in% x$Meet)){

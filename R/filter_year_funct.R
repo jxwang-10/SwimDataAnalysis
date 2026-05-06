@@ -12,8 +12,14 @@
 #' filter_year(twohundred_fly, 2025)
 
 filter_year <- function(x, year){
+
   # Get cleaned dataset
   x_clean <- cleanData(x)
+
+  # error if there is no date variable included in data
+  if ("date" %in% colnames(x_clean) == FALSE){
+    stop("No column named Date found")
+  }
 
   # Error if the year given is not included in the dataset
   if(!(year %in% lubridate::year(x_clean$date))){
