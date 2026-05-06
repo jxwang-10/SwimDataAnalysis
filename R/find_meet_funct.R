@@ -14,12 +14,12 @@
 find_meet <- function(x, meet){
 
   # Error if event given is not included in the dataset
-  if(!(meet %in% x_clean$Meet)){
+  if(!(meet %in% x$Meet)){
     stop("This meet, ", meet,", is not included in your data.")}
 
   # Error if event given is not included in the dataset
   if(is.character(meet) != TRUE){
-    stop("Input value for meet, ", event,", is not of the character type.")}
+    stop("Input value for meet, ", meet,", is not of the character type.")}
 
   # Filter the data to only rows with the specified meet
   filteredx <- x |>

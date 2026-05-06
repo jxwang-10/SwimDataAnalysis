@@ -29,9 +29,11 @@ Imports:
     ggplot2,
     janitor,
     lubridate,
+    plotly,
     purrr,
     stringr,
-    tidyr
+    tidyr,
+    zoo
 RoxygenNote: 7.3.3
 Suggests: 
     knitr,
