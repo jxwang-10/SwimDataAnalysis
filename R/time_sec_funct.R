@@ -10,6 +10,9 @@
 #' make_time_sec(clean_twohundred_fly)
 
 make_time_sec <- function(x){
+  # Error if dataset invalid
+  if(nrow(x) == 0){
+    stop("Input data is empty. Cannot plot anything.")}
 
   # Error if time_og is not included in data
   if(!("time_og" %in% names(x))){
@@ -17,8 +20,8 @@ make_time_sec <- function(x){
 
   # Mutate data to add minutes, seconds, and time_sec
   seconds_x <- x |>
-    dplyr::mutate(minutes = as.numeric(sub(":.*", "", x$time_og)),
-                  seconds = as.numeric(sub(".*:", "", x$time_og)),
+    dplyr::mutate(minutes = as.numeric(sub(":.*", "", time_og)),
+                  seconds = as.numeric(sub(".*:", "", time_og)),
                   time_sec = minutes * 60 + seconds)
 
   # Return mutated data

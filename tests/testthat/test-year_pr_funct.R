@@ -17,5 +17,4 @@ test_that("year pr function works", {
   # tests that is filters correctly by year
   # (Dec 16, 2018 -> 2:27.35, Dec 16, 2022 -> 2:10.92)
   expect_equal(yearly_pr(twohundred_fly, 2018), "2:27.35")
-
 })
