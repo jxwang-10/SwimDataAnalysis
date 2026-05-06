@@ -23,44 +23,64 @@ This package is to analyze a swimmer's data from [swimcloud.com](swimcloud.com).
 # Examples:
 
 ## cleanData
-used to make a column with time series and coerce the date into a date type
+Description: used to make a variable with time series and coerce date var to date type
 ```{r}
 #| eval: false
 cleanData(twohundred_fly)
-
 ```
 
 ## filter_year
-used to filter for all the swims in one year (not season)
+Description: used to filter for all listed times in the specified year (not season)
 ```{r}
 #| eval: false
 filter_year(twohundred_fly, 2025)
 ```
 
 ## find_meet
-used to find the times from a meet, regardless of year
+Description: used to find the times from a meet, regardless of year
 ```{r}
 #| eval: false
 find_meet("Speedo Sectionals - Providence")
 ```
 
 ## plot_progress
-used to plot the progression across the years
+Description: used to plot progressions in time throughout the years
 ```{r}
 #| eval: false
 plot_progress(twohundred_fly)
 ```
 
-
 ## find_event
-used to filter out an event when the dataset includes more than one
+Description: used to filter to a specific event (if data includes more than one)
 ```{r}
+#| eval: false
 find_event(top_three, "200 Back")
 ```
 
 ## yearly_pr
-used to find the pr in a certain year
+Description: used to find the pr for a certain year
 ```{r}
+#| eval: false
 yearly_pr(twohundred_fly, 2026)
 ```
 
+## make_time_sec
+Description: used to add a time_sec variable that converts times to seconds
+```{r}
+#| eval: false
+make_time_sec(clean_twohundred_fly)
+```
+
+## moving_avg
+Description: used to create a plot with times and moving average
+```{r}
+#| eval: false
+moving_avg(twohundred_back)
+```
+
+## plot_meet_type
+Description: used to create a plot times sectioned by meet type
+```{r}
+#| eval: false
+plot_meet_type(twohundred_back)
+```

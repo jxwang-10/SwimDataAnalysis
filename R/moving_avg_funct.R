@@ -14,6 +14,9 @@
 #' moving_avg(twohundred_back)
 
 moving_avg <- function(x){
+  # Error if dataset invalid
+  if(nrow(x) == 0){
+    stop("Input data is empty. Cannot plot anything.")}
 
   # Get cleaned data
   x_new <- cleanData(x)
