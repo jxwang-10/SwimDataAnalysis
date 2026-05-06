@@ -21,6 +21,7 @@ knitr::opts_chunk$set(
 ## About
 
 SwimDataAnalysis is a package to analyze a swimmer's data (i.e., times) from [SwimCloud](swimcloud.com). You can analyze:
+
 - PRs
 - Overall Progress
 - Filtered data based on criteria
